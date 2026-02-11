@@ -3,11 +3,20 @@ from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from app.schema import CarFeatures , PredictionResponse
 from app.model import predict_price , load_artifacts
+from fastapi.middleware.cors import CORSMiddleware
 
 
 
 app = FastAPI(title="Car Price Prediction API" ,
               version="0.1.0")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+    allow_methods = ["*"]
+)
 
 @app.on_event("startup")
 
