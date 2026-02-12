@@ -6,11 +6,11 @@ import joblib
 warnings.filterwarnings("ignore", category=FutureWarning)
 warnings.filterwarnings("ignore", message=".*InconsistentVersionWarning.*")
 
-# CAR_PRICE_API_DIR = Path(__file__).resolve().parent
-# MODEL_PATH = CAR_PRICE_API_DIR / "random_forest_model.pkl"
-# COLS_PATH = CAR_PRICE_API_DIR / "feature_columns.pkl"
-MODEL_PATH = "/media/ayushz/New Volume/fast_api/project/car_price_api/app/random_forest_model.pkl"
-COLS_PATH = "/media/ayushz/New Volume/fast_api/project/car_price_api/app/feature_columns.pkl"
+CAR_PRICE_API_DIR = Path(__file__).resolve().parent
+MODEL_PATH = CAR_PRICE_API_DIR / "random_forest_model.pkl"
+COLS_PATH = CAR_PRICE_API_DIR / "feature_columns.pkl"
+# MODEL_PATH = "/media/ayushz/New Volume/fast_api/project/car_price_api/app/random_forest_model.pkl"
+# COLS_PATH = "/media/ayushz/New Volume/fast_api/project/car_price_api/app/feature_columns.pkl"
 
 _model = None
 _feature_columns = None

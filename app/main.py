@@ -15,14 +15,14 @@ app.add_middleware(
     allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
-    allow_methods = ["*"]
+    allow_credentials=True,
 )
 
 @app.on_event("startup")
 
 def startup_event():
     load_artifacts()
-
+ 
 @app.get("/test")
 def test():
     return JSONResponse(status_code=200,
