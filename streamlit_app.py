@@ -7,7 +7,7 @@ import streamlit as st
 import requests
 
 # ─── Configuration ───────────────────────────────────────────────────────────
-API_URL = "https://fastapi-full-stack-1-v47n.onrender.com"
+API_URL = "https://fastapi-full-stack-1-v47n.onrender.com/predict"
 PREDICT_ENDPOINT = f"{API_URL}/predict"
 TEST_ENDPOINT = f"{API_URL}/test"
 
