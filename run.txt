@@ -4,3 +4,6 @@ uvicorn app.main:app --reload
 now in different terminal
 cd "/media/ayushz/New Volume/fast_api/project/car_price_api"
 streamlit run app/streamlit_app.py
+
+
+Available at your primary URL https://fastapi-full-stack-1-v47n.onrender.com
