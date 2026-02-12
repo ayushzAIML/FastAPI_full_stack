@@ -23,11 +23,13 @@ app.add_middleware(
 def startup_event():
     load_artifacts()
  
-@app.get("/test")
-def test():
+@app.get("/")
+def root():
     return JSONResponse(status_code=200,
                         content={"Success":True,
-                        "message":"this is test route"})
+                        "message":"Car Price Prediction API is running"})
+
+
 
 
 @app.post("/predict",response_model=PredictionResponse)
